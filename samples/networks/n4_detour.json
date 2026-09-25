@@ -1,0 +1,26 @@
+{
+  "id": "n4_detour",
+  "nodes": [
+    {"id": "S", "x": 0, "y": 6},
+    {"id": "A", "x": 4, "y": 6},
+    {"id": "C", "x": 8, "y": 6},
+    {"id": "B", "x": 4, "y": 0},
+    {"id": "D", "x": 8, "y": 0}
+  ],
+  "edges": [
+    {"id": "S-A", "from": "S", "to": "A", "cost": 2},
+    {"id": "A-S", "from": "A", "to": "S", "cost": 2},
+    {"id": "A-C", "from": "A", "to": "C", "cost": 2},
+    {"id": "A-B", "from": "A", "to": "B", "cost": 2},
+    {"id": "B-A", "from": "B", "to": "A", "cost": 2},
+    {"id": "C-D", "from": "C", "to": "D", "cost": 2},
+    {"id": "D-C", "from": "D", "to": "C", "cost": 2},
+    {"id": "D-B", "from": "D", "to": "B", "cost": 2},
+    {"id": "B-D", "from": "B", "to": "D", "cost": 2}
+  ],
+  "turn_restrictions": [
+    {"in": "S-A", "out": "A-B"},
+    {"in": "B-A", "out": "A-C"},
+    {"in": "D-B", "out": "B-A"}
+  ]
+}

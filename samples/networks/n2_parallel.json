@@ -1,0 +1,22 @@
+{
+  "id": "n2_parallel",
+  "nodes": [
+    {"id": "A", "x": 0, "y": 0},
+    {"id": "B", "x": 5, "y": 0},
+    {"id": "C", "x": 10, "y": 0},
+    {"id": "D", "x": 10, "y": 6}
+  ],
+  "edges": [
+    {"id": "A-B#1", "from": "A", "to": "B", "cost": 2},
+    {"id": "A-B#2", "from": "A", "to": "B", "cost": 4},
+    {"id": "B-C#1", "from": "B", "to": "C", "cost": 2},
+    {"id": "B-C#2", "from": "B", "to": "C", "cost": 4},
+    {"id": "C-D", "from": "C", "to": "D", "cost": 2},
+    {"id": "A-D", "from": "A", "to": "D", "cost": 12}
+  ],
+  "turn_restrictions": [
+    {"in": "A-B#1", "out": "B-C#1"},
+    {"in": "A-B#1", "out": "B-C#2"},
+    {"in": "B-C#2", "out": "C-D"}
+  ]
+}

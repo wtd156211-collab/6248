@@ -1,0 +1,9 @@
+{
+  "network": "samples/networks/n3_isolated.json",
+  "queries": [
+    {"id": "q1", "type": "path", "from": "S", "to": "T"},
+    {"id": "q2", "type": "path", "from": "S", "to": "Z"},
+    {"id": "q3", "type": "path", "from": "Z", "to": "S"},
+    {"id": "q4", "type": "table", "from": "S", "targets": ["T", "Z", "P", "S"]}
+  ]
+}

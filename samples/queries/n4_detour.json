@@ -1,0 +1,10 @@
+{
+  "network": "samples/networks/n4_detour.json",
+  "queries": [
+    {"id": "q1", "type": "path", "from": "S", "to": "B"},
+    {"id": "q2", "type": "path", "from": "B", "to": "S"},
+    {"id": "q3", "type": "path", "from": "S", "to": "D"},
+    {"id": "q4", "type": "table", "from": "A", "targets": ["B", "C", "S", "D"]},
+    {"id": "q5", "type": "path", "from": "S", "to": "C"}
+  ]
+}

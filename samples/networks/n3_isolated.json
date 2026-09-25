@@ -1,0 +1,17 @@
+{
+  "id": "n3_isolated",
+  "nodes": [
+    {"id": "S", "x": 0, "y": 0},
+    {"id": "Q", "x": 6, "y": 0},
+    {"id": "P", "x": 0, "y": 6},
+    {"id": "T", "x": 6, "y": 6},
+    {"id": "Z", "x": 12, "y": 3}
+  ],
+  "edges": [
+    {"id": "S-P", "from": "S", "to": "P", "cost": 1},
+    {"id": "S-Q", "from": "S", "to": "Q", "cost": 1},
+    {"id": "P-T", "from": "P", "to": "T", "cost": 2},
+    {"id": "Q-T", "from": "Q", "to": "T", "cost": 2}
+  ],
+  "turn_restrictions": []
+}

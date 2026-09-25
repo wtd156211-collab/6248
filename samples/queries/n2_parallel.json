@@ -1,0 +1,9 @@
+{
+  "network": "samples/networks/n2_parallel.json",
+  "queries": [
+    {"id": "q1", "type": "path", "from": "A", "to": "D"},
+    {"id": "q2", "type": "path", "from": "A", "to": "C"},
+    {"id": "q3", "type": "path", "from": "A", "to": "B"},
+    {"id": "q4", "type": "table", "from": "B", "targets": ["C", "D", "A"]}
+  ]
+}

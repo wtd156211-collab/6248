@@ -1,0 +1,16 @@
+{
+  "id": "n1_cycle",
+  "nodes": [
+    {"id": "A", "x": 0, "y": 0},
+    {"id": "B", "x": 6, "y": 0},
+    {"id": "C", "x": 6, "y": 6},
+    {"id": "D", "x": 0, "y": 6}
+  ],
+  "edges": [
+    {"id": "A-B", "from": "A", "to": "B", "cost": 3},
+    {"id": "B-C", "from": "B", "to": "C", "cost": 5},
+    {"id": "C-D", "from": "C", "to": "D", "cost": 3},
+    {"id": "D-A", "from": "D", "to": "A", "cost": 5}
+  ],
+  "turn_restrictions": []
+}

@@ -1,0 +1,11 @@
+[
+  {"query_id": "q1", "type": "path", "from": "S", "to": "B", "cost": 8, "path": ["S-A", "A-C", "C-D", "D-B"]},
+  {"query_id": "q2", "type": "path", "from": "B", "to": "S", "cost": 4, "path": ["B-A", "A-S"]},
+  {"query_id": "q3", "type": "path", "from": "S", "to": "D", "cost": 6, "path": ["S-A", "A-C", "C-D"]},
+  {"query_id": "q4", "type": "table", "from": "A", "rows": [
+    {"to": "B", "cost": 2, "path": ["A-B"]},
+    {"to": "C", "cost": 2, "path": ["A-C"]},
+    {"to": "S", "cost": 2, "path": ["A-S"]},
+    {"to": "D", "cost": 4, "path": ["A-B", "B-D"]}]},
+  {"query_id": "q5", "type": "path", "from": "S", "to": "C", "cost": 4, "path": ["S-A", "A-C"]}
+]
